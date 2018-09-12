@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="52px" viewBox="0 0 111 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>logo/primary-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="home-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-91.000000, -22.000000)">
+            <g id="header" transform="translate(93.000000, 0.000000)">
+                <g id="logo/primary-logo" transform="translate(0.000000, 24.000000)">
+                    <g id="primary-logo">
+                        <rect id="Rectangle" stroke-opacity="0.85" stroke="#000000" stroke-width="2.25599999" fill-rule="nonzero" x="0" y="0" width="107.16" height="47.9399999"></rect>
+                        <text id="Boards" font-family="JosefinSans-Bold, Josefin Sans" font-size="25.9439999" font-weight="bold" fill="#000000" fill-opacity="0.85">
+                            <tspan x="16.92" y="32.46">boards</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

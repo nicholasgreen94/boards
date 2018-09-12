@@ -1,28 +1,103 @@
-.App {
-  text-align: center;
+:root {
+  --black: rgba(0,0,0,0.85);
+	--white: #fefefe;
+  --textColor: rgba(0,0,0,.60);
+	--primaryColor: rgb(235, 113, 97);
+	--tan: rgb(240, 233, 218);
+  --blue: rgb(50, 61, 102);
+  --maroon: rgb(159, 88, 107);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#root {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	-ms-font-feature-settings: "kern","liga","clig","calt";
+	-webkit-font-feature-settings: "kern","liga","clig","calt";
+	font-feature-settings: "kern","liga","clig","calt";
 }
 
-.App-title {
-  font-size: 1.5em;
+body {
+  background: var(--white);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+	color: var(--textColor);
+  word-wrap: break-word;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-.App-intro {
-  font-size: large;
+#skip-nav {
+  position: fixed;
+  left: -10000px;
+  top: -10000px;
+  overflow: hidden;
+  &:active {
+    color: var(--black);
+    position: relative;
+  }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#site-content {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 100%;
+	margin: 0 auto;
+	max-width: 1254px;
+	padding: 0 6vw;
+	position: relative;
+}
+
+@media screen and (min-width: 600px) {
+	#site-content {
+		padding: 0 8vw;
+	}
 }
