@@ -6,6 +6,7 @@
 	--tan: rgb(240, 233, 218);
   --blue: rgb(50, 61, 102);
   --maroon: rgb(159, 88, 107);
+  --font: 'Josefin Sans', helvetica, arial, sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -53,7 +54,7 @@ table {
 }
 
 #root {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: var(--font);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -86,6 +87,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 #site-content {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -100,4 +105,19 @@ body {
 	#site-content {
 		padding: 0 8vw;
 	}
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+h1 {
+  color: var(--black);
+  font-size: 12vw;
+  line-height: 1.1;
 }

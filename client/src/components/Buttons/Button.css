@@ -1,0 +1,13 @@
+
+.orange-btn {
+  background: var(--primaryColor);
+  border: none;
+  border-radius: 16px;
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 9px 0;
+  max-width: 110px;
+  width: 100%;
+}

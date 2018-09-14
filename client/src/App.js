@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import Header from './components/Header/Head'
+import Home from './components/Pages/Home'
+import Footer from './components/Footer/Footer'
 import './App.css';
 
 class App extends Component {
@@ -21,6 +23,8 @@ class App extends Component {
           <div id='site-content'>
             <a id='skip'>{''}</a>
             <Header />
+            <Home />
+            <Footer />
           </div>
         </div>
       </Router>

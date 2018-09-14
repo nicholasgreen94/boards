@@ -1,0 +1,20 @@
+.image-gif {
+  display: block;
+  margin: 0 auto;
+  width: 254px;
+}
+
+.intro {
+  padding-top: 104px;
+  margin-bottom: 68px;
+}
+
+.intro p {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 600px) {
+  .intro {
+    margin-bottom: 0;
+  }
+}
