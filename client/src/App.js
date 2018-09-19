@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import Header from './components/Header/Head'
-import Home from './components/Pages/Home'
+import LandingPage from './Pages/LandingPage/LandingPage'
+import Profile from './Pages/Profile/Profile'
 import Footer from './components/Footer/Footer'
 import './App.css';
 
 class App extends Component {
+  state = {
+   isLoggedIn: false,
+   user: {}
+  }
+
+  changeAppState = (obj) => {
+    this.setState(obj);
+  }
+
+
   render() {
     return (
       <Router>
@@ -23,7 +34,8 @@ class App extends Component {
           <div id='site-content'>
             <a id='skip'>{''}</a>
             <Header />
-            <Home />
+            <Route exact path="/" render={() => <LandingPage isLoggedIn={this.state.isLoggedIn} />} />
+            <Route path='/profile' render={() => <Profile isLoggedIn={this.state.isLoggedIn} changeApp={this.changeAppState} user={this.state.user} />} />
             <Footer />
           </div>
         </div>
