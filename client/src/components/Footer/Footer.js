@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <div>
         <footer className='footer'>
-          <span>Made by <a href='https://www.nicholasgreendesigns.com/' rel='noopener' target='_blank'>Nicholas Green</a></span>
+          <span>Made by <a href='https://www.nicholasgreendesigns.com/' rel='noopener' target='_blank' rel='noopener noreferrer'>Nicholas Green</a></span>
         </footer>
       </div>
     )
