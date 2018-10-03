@@ -33,7 +33,7 @@ class App extends Component {
           <a href='#skip' id='skip-nav'>{"Skip Nav"}</a>
           <div id='site-content'>
             <a id='skip'>{''}</a>
-            <Header />
+            <Header isLoggedIn={this.state.isLoggedIn} changeApp={this.changeAppState} user={this.state.user} />
             <Route exact path="/" render={() => <LandingPage isLoggedIn={this.state.isLoggedIn} />} />
             <Route path='/profile' render={() => <Profile isLoggedIn={this.state.isLoggedIn} changeApp={this.changeAppState} user={this.state.user} />} />
             <Footer />

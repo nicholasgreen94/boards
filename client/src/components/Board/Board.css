@@ -1,0 +1,7 @@
+
+.board {
+  background: var(--tan);
+  border-radius: 8px;
+  height: 192px;
+  position: relative;
+}

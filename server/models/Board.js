@@ -3,9 +3,9 @@ const Schema = mongoose.Schema
 const ObjectId = Schema.ObjectId
 
 const boardSchema = new Schema({
-  // user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
   name: String,
-  // photos: { type: mongoose.Schema.Types.ObjectId, ref: 'Photo'}
+  photos: { type: mongoose.Schema.Types.ObjectId, ref: 'Photo'},
   boardCover: String,
   boardDescription: String,
   dateAdded: Date,

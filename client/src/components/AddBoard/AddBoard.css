@@ -1,0 +1,12 @@
+
+.create-new-board {
+  cursor: pointer;
+}
+
+.plus-symbol {
+  display: inline-block;
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

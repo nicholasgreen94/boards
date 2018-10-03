@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import API from '../../utils/api'
-
-
+import './Profile.css';
+import AddBoard from '../../components/AddBoard/AddBoard'
+import Board from '../../components/Board/Board'
 
 class Profile extends Component {
   componentDidMount() {
@@ -21,10 +22,26 @@ class Profile extends Component {
 
 
   render(props) {
+    const user = this.props.user
     return(
-      <div>
-        <h1>Hello {this.props.user.username}</h1>
-        <img src={this.props.user.thumbnail} />
+      <div className='user-boards'>
+        <div className='profile-heading'>
+          <h1>{user.username}</h1>
+          <span className='num-boards'>10 boards</span>
+        </div>
+        <Grid className='boards'>
+          <h2>Your boards</h2>
+          <Row>
+            <Col xs={6} md={4} lg={4}>
+              <AddBoard />
+            </Col>
+            <Col xs={6} md={4} lg={4}>
+              <Board />
+            </Col>
+          </Row>
+        </Grid>
+
+
       </div>
     )
   }

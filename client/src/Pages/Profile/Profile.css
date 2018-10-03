@@ -1,0 +1,17 @@
+
+.profile-heading {
+  margin: 40px 0 100px;
+}
+
+.num-boards {
+  color: var(--textColor);
+  display: inline-block;
+  font-size: 16px;
+}
+
+.boards h2 {
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}

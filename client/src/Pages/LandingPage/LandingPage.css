@@ -13,8 +13,15 @@
   margin-bottom: 28px;
 }
 
+.intro-phone {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .intro {
     margin-bottom: 0;
+  }
+  .intro-phone {
+    display: block;
   }
 }

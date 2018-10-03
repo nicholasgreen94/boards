@@ -17,7 +17,7 @@ class LandingPage extends Component {
   render(props) {
     return (
       <div id='index'>
-      {this.props.isLoggedIn ? null : checkForCookieUser()}
+      {!this.props.isLoggedIn ? null : checkForCookieUser()}
         <Grid fluid>
           <Row>
             <Col xs={12} md={6} className='intro'>
@@ -28,7 +28,7 @@ class LandingPage extends Component {
               </p>
               <a href='http://localhost:3001/auth/google'><Button>Sign Up</Button></a>
             </Col>
-            <Col xs={12} md={6} className='intro-phone'>
+            <Col md={6} className='intro-phone'>
               <img src={Phone} className='image-gif' alt='A gif of creating a board' />
             </Col>
           </Row>

@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import ReactSVG from 'react-svg'
 import Logo from '../../assets/logos/primary-logo.svg'
 import MainNavigation from './MainNavigation'
 import './Header.css'
+const SVG = require('svg.js')
+
 
 
 class Header extends Component {
@@ -26,18 +29,28 @@ class Header extends Component {
       this.toggleMenu()
       e.stopPropagation()
     }
-
-    render() {
+    
+    render(props) {
       return (
         <div>
           <MainHeader>
-            <Link to='/'><img src={Logo} alt='boards logo, the words boards surrounded by a box' className='main-logo' /></Link>
-            <MainNavigation handleMouseDown={this.handleMouseDown} navVisibility={this.state.visible} />
+            {this.props.isLoggedIn ?
+              <Link to={`/profile/${this.props.user._id}`}>
+                <ReactSVG src={Logo} className='main-logo' />
+              </Link>
+              :
+              <Link to='/'>
+                <ReactSVG src={Logo} className='main-logo' />
+              </Link>
+            }
+            <MainNavigation user={this.props.user} changeApp={this.props.changeApp} handleMouseDown={this.handleMouseDown} navVisibility={this.state.visible} />
           </MainHeader>
         </div>
       )
     }
 }
+
+
 
 export default Header
 
